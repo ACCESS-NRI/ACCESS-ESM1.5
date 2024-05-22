@@ -1,0 +1,69 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+    - access-esm1p5@git.2024.05.0
+  packages:
+    # Direct ACCESS-NRI dependencies
+    mom5:
+      require:
+        - '@access-esm1.5'  # commit: 3739503752d15355e396312ba8c3d8a05471a7e6
+    cice4:
+      require:
+        - '@git.2024.05.21'
+    um7:
+      require:
+        - '@git.2024.05.21'
+
+    # Lower-level ACCESS-NRI dependencies
+    gcom4:
+      require:
+        - '@git.2024.05.21'
+    oasis3-mct:
+      require:
+        - '@access-esm1.5'  # commit: 797bd2712d0dc133772c49ae6afbf10943ce3ded
+
+    # Other dependencies
+    openmpi:
+      require:
+        - '@4.0.2'
+
+    # Preferences for all packages
+    all:
+      compiler: [intel@19.1.3.304]
+      target: [x86_64]
+  view: true
+  concretizer:
+    unify: true
+  modules:
+    default:
+      enable:
+        - tcl
+      roots:
+        tcl: $spack/../release/modules
+        lmod: $spack/../release/lmod
+      tcl:
+        hash_length: 0
+        include:
+          - access-esm1p5
+        hide_implicits: true
+        all:
+          autoload: direct
+          conflict:
+            - '{name}'
+          environment:
+            set:
+              'SPACK_{name}_ROOT': '{prefix}'
+        projections:
+          all: '{name}/{version}'
+          access-esm1p5: '{name}/2024.05.0'
+  config:
+    install_tree:
+      root: "$spack/../restricted/ukmo/release"
+    source_cache:
+      - "$spack/../restricted/ukmo/source_cache"
+    build_stage:
+      - "$TMPDIR/restricted/spack-stage"
