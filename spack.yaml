@@ -20,7 +20,7 @@ spack:
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
-        - '@git.2024.05.21'
+        - '@git.2024.05.22'
     oasis3-mct:
       require:
         - '@access-esm1.5'  # commit: 797bd2712d0dc133772c49ae6afbf10943ce3ded
