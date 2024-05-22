@@ -50,6 +50,9 @@ spack:
         hash_length: 0
         include:
           - access-esm1p5
+          - cice4
+          - um7
+          - mom5
         hide_implicits: true
         all:
           autoload: direct
