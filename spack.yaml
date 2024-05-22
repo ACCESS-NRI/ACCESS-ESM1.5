@@ -11,7 +11,7 @@ spack:
     # the usual '@git.DATE' format.
     mom5:
       require:
-        - '@git.access-esm1.5'  # commit: 3739503752d15355e396312ba8c3d8a05471a7e6
+        - '@access-esm1.5'  # commit: 3739503752d15355e396312ba8c3d8a05471a7e6
     cice4:
       require:
         - '@git.2024.05.21'
@@ -25,7 +25,7 @@ spack:
         - '@git.2024.05.22'
     oasis3-mct:
       require:
-        - '@git.access-esm1.5'  # commit: 797bd2712d0dc133772c49ae6afbf10943ce3ded
+        - '@access-esm1.5'  # commit: 797bd2712d0dc133772c49ae6afbf10943ce3ded
 
     # Other dependencies
     openmpi:
