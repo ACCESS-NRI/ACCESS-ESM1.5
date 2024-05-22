@@ -7,6 +7,8 @@ spack:
     - access-esm1p5@git.2024.05.0
   packages:
     # Direct ACCESS-NRI dependencies
+    # Note: mom5, oasis3-mct have branch-specific logic and hence can't use
+    # the usual '@git.DATE' format.
     mom5:
       require:
         - '@access-esm1.5'  # commit: 3739503752d15355e396312ba8c3d8a05471a7e6
