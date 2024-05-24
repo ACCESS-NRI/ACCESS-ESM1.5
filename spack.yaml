@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   specs:
-    - access-esm1p5@git.2024.05.0
+    - access-esm1p5@git.2024.05.1
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: mom5, oasis3-mct have branch-specific logic and hence can't use
@@ -63,7 +63,7 @@ spack:
               'SPACK_{name}_ROOT': '{prefix}'
         projections:
           all: '{name}/{version}'
-          access-esm1p5: '{name}/2024.05.0'
+          access-esm1p5: '{name}/2024.05.1'
           cice4: '{name}/2024.05.21'
           um7: '{name}/2024.05.21'
           mom5: '{name}/access-esm1.5'
