@@ -11,7 +11,7 @@ spack:
     # the usual '@git.DATE' format.
     mom5:
       require:
-        - '@access-esm1.5'  # commit: 3739503752d15355e396312ba8c3d8a05471a7e6
+        - '@git.access-esm1.5_2024.05.24=access-esm1.5'
     cice4:
       require:
         - '@git.2024.05.21'
@@ -25,7 +25,7 @@ spack:
         - '@git.2024.05.22'
     oasis3-mct:
       require:
-        - '@access-esm1.5'  # commit: 797bd2712d0dc133772c49ae6afbf10943ce3ded
+        - '@git.access-esm1.5_2024.05.24=access-esm1.5'
 
     # Other dependencies
     openmpi:
@@ -66,7 +66,7 @@ spack:
           access-esm1p5: '{name}/2024.05.1'
           cice4: '{name}/2024.05.21'
           um7: '{name}/2024.05.21'
-          mom5: '{name}/access-esm1.5'
+          mom5: '{name}/access-esm1.5_2024.05.24'
   config:
     install_tree:
       root: "$spack/../restricted/ukmo/release"
