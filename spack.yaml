@@ -29,11 +29,21 @@ spack:
     openmpi:
       require:
         - '@4.0.2'
+    netcdf-c:
+      require:
+        - '@4.7.4'
+    netcdf-fortran:
+      require:
+        - '@4.5.1'
+    hdf5:
+      require:
+        - '@1.10.5'
 
     # Preferences for all packages
     all:
-      compiler: [intel@19.0.5.281]
-      target: [x86_64]
+      require:
+        - '%intel@19.0.5.281'
+        - 'target=x86_64'
   view: true
   concretizer:
     unify: true
