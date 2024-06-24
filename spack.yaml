@@ -7,8 +7,8 @@ spack:
     - access-esm1p5@git.2024.05.0
   packages:
     # Direct ACCESS-NRI dependencies
-    # Note: mom5, oasis3-mct have branch-specific logic and hence can't use
-    # the usual '@git.DATE' format.
+    # Note: some packages have branch-specific logic and hence can't use
+    # the usual '@git.DATE' calver (https://calver.org) format.
     mom5:
       require:
         - '@git.access-esm1.5_2024.05.24=access-esm1.5'
@@ -31,19 +31,20 @@ spack:
         - '@4.0.2'
     netcdf-c:
       require:
-        - '@4.7.4'
+        - '@4.7.1'
+        - '%gcc@8.5.0'
     netcdf-fortran:
       require:
-        - '@4.6.1'
+        - '@4.5.2'
     hdf5:
       require:
-        - '@1.10.5'
+        - '@1.10.11'
 
     # Preferences for all packages
     all:
       require:
         - '%intel@19.0.5.281'
-        - 'target=x86_64'
+        - 'target=x86_64_v4'
   view: true
   concretizer:
     unify: true
