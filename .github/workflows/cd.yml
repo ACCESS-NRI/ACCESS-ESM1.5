@@ -13,6 +13,7 @@ jobs:
     uses: access-nri/build-cd/.github/workflows/cd.yml@main
     with:
       model: ${{ vars.NAME }}
+      root-sbd: access-esm1p5
     permissions:
       contents: write
     secrets: inherit
