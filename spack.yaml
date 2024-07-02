@@ -11,13 +11,13 @@ spack:
     # the usual '@git.DATE' calver (https://calver.org) format.
     mom5:
       require:
-        - '@git.access-esm1.5_2024.05.24=access-esm1.5'
+        - '@git.access-esm1.5_2024.06.20=access-esm1.5'
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.2024.05.21=7.3'
+        - '@git.2024.05.21=access-esm1.5'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
