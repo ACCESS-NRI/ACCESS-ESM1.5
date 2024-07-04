@@ -62,9 +62,9 @@ spack:
           - cice4
           - um7
           - mom5
-        hide_implicits: true
+        hide_implicits: false
         all:
-          autoload: direct
+          autoload: run
           conflict:
             - '{name}'
           environment:
