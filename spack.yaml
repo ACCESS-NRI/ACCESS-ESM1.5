@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   specs:
-    - access-esm1p5@git.2024.05.1
+    - access-esm1p5@git.2024.05.2
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -18,7 +18,7 @@ spack:
         - '@git.2024.05.21=access-esm1.5'
     um7:
       require:
-        - '@git.2024.07.03=access-esm1.5'
+        - '@git.2024.10.17=access-esm1.5'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
@@ -57,9 +57,9 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p5: '{name}/2024.05.1'
+          access-esm1p5: '{name}/2024.05.2'
           cice4: '{name}/2024.05.21-{hash:7}'
-          um7: '{name}/2024.07.03-{hash:7}'
+          um7: '{name}/2024.10.17-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
     install_tree:
