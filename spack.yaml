@@ -2,6 +2,7 @@
 #
 # It describes a set of packages to be installed, along with
 # configuration settings.
+# NEW COMMENT
 spack:
   specs:
     - access-esm1p5@git.2024.05.1
