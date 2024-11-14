@@ -57,7 +57,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p5: '{name}/2024.05.1-{hash:7}'
+          access-esm1p5: '{name}/2024.05.1'
           cice4: '{name}/2024.05.21-{hash:7}'
           um7: '{name}/2024.07.03-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
