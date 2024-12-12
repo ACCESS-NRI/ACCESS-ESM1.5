@@ -4,7 +4,7 @@
 # configuration settings.
 spack:
   specs:
-    - access-esm1p5@git.2024.05.2
+    - access-esm1p5@git.2024.12.0
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
@@ -39,7 +39,6 @@ spack:
     hdf5:
       require:
         - '@1.10.11'
-
     # Preferences for all packages
     all:
       require:
@@ -57,7 +56,7 @@ spack:
           - um7
           - mom5
         projections:
-          access-esm1p5: '{name}/2024.05.2'
+          access-esm1p5: '{name}/2024.12.0'
           cice4: '{name}/2024.05.21-{hash:7}'
           um7: '{name}/2024.10.17-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
@@ -66,4 +65,4 @@ spack:
       root: $spack/../restricted/ukmo/release
     source_cache: $spack/../restricted/ukmo/source_cache
     build_stage:
-    - $TMPDIR/restricted/spack-stage
+      - $TMPDIR/restricted/spack-stage
