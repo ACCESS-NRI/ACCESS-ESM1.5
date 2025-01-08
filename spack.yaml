@@ -1,7 +1,7 @@
 # This is a Spack Environment file.
 #
 # It describes a set of packages to be installed, along with
-# configuration settings.
+# configuration settings. 
 spack:
   specs:
     - access-esm1p5@git.2024.12.0
