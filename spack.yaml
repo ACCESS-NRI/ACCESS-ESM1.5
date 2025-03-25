@@ -12,7 +12,7 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
-        - '@git.access-esm1.5_2024.08.23=access-esm1.5'
+        - '@git.9c3226feb54f4ec2a3bc14515c9668f967318a81=access-esm1.5' # On access-esm1.5-WOMBAT-limit-schmidt
     cice4:
       require:
         - '@git.2024.05.21=access-esm1.5'
@@ -59,7 +59,7 @@ spack:
           access-esm1p5: '{name}/2024.12.0'
           cice4: '{name}/2024.05.21-{hash:7}'
           um7: '{name}/2024.10.17-{hash:7}'
-          mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
+          mom5: '{name}/9c3226feb54f4ec2a3bc14515c9668f967318a81-{hash:7}'
   config:
     install_tree:
       root: $spack/../restricted/ukmo/release
