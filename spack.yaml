@@ -15,7 +15,7 @@ spack:
         - '@git.access-esm1.5_2024.08.23=access-esm1.5'
     cice4:
       require:
-        - '@git.5e3dc23f3cf715909cc3305198ac819851cf2b0e=access-esm1.5'
+        - '@git.e0d92075330af3a45f97914a81985e4178fc3857=access-esm1.5'
     um7:
       require:
         - '@git.2024.10.17=access-esm1.5'
@@ -57,7 +57,7 @@ spack:
           - mom5
         projections:
           access-esm1p5: '{name}/2024.12.0'
-          cice4: '{name}/5e3dc23f3cf715909cc3305198ac819851cf2b0e-{hash:7}'
+          cice4: '{name}/e0d92075330af3a45f97914a81985e4178fc3857-{hash:7}'
           um7: '{name}/2024.10.17-{hash:7}'
           mom5: '{name}/access-esm1.5_2024.08.23-{hash:7}'
   config:
