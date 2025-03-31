@@ -16,6 +16,7 @@ spack:
     cice4:
       require:
         - '@git.01a5443de31a12f1f32c9410174a17232eb88155=access-esm1.5'
+        - fflags='-cpp'
     um7:
       require:
         - '@git.2024.10.17=access-esm1.5'
