@@ -18,7 +18,7 @@ spack:
         - '@git.access-esm1.5-2025.04.001=access-esm1.5'
     um7:
       require:
-        - '@git.2024.10.17=access-esm1.5'
+        - '@git.2f3906e8de29a2744d060a71f4683b8ede9c0148=access-esm1.5'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
