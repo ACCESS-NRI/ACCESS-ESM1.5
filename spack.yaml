@@ -29,7 +29,7 @@ spack:
     # Other dependencies
     openmpi:
       require:
-        - '@5.0.8'
+        - '@5.0.5'
     netcdf-c:
       require:
         - '@4.9.2'
