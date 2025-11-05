@@ -8,11 +8,11 @@ ACCESS-ESM1.5 was developed by CSIRO (Ziehn T, Chamberlain MA, Law RM, Lenton A,
 
 Details about the model components is available on the ACCESS Hive Docs:
 
-https://access-hive.org.au/models/configurations/access-esm/
+https://docs.access-hive.org.au/models/access_models/access-esm/
 
 And instructions for how to run the model:
 
-https://access-hive.org.au/models/run-a-model/run-access-esm/
+https://docs.access-hive.org.au/models/run_a_model/run_access-esm/
 
 ## Support
 
