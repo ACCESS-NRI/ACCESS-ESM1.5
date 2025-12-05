@@ -43,10 +43,14 @@ spack:
     hdf5:
       require:
       - '@1.10.11'
+    # Compilers
+    intel-oneapi-compilers-classic:
+      require:
+      - '@19.0.3.199'
     # Preferences for all packages
     all:
       require:
-      - '%intel@19.0.3.199'
+      - '%access_intel'
       - 'target=x86_64_v4'
   view: true
   concretizer:
