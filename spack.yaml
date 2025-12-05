@@ -3,8 +3,12 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
+  definitions:
+  # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
+  - _name: [access-esm1p5]
+  - _version: [2024.12.1]
   specs:
-  - access-esm1p5@git.2024.12.1
+  - access-esm1p5
   packages:
     # Direct ACCESS-NRI dependencies
     # Note: some packages have branch-specific logic and hence can't use
