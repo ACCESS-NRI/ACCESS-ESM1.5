@@ -44,13 +44,19 @@ spack:
       require:
       - '@1.10.11'
     # Compilers
-    intel-oneapi-compilers-classic:
+    c:
       require:
-      - '@19.0.3.199'
+      - intel-oneapi-compilers-classic@19.0.3.199
+    cxx:
+      require:
+      - intel-oneapi-compilers-classic@19.0.3.199
+    fortran:
+      require:
+      - intel-oneapi-compilers-classic@19.0.3.199
+
     # Preferences for all packages
     all:
       require:
-      - '%access_intel'
       - 'target=x86_64_v4'
   view: true
   concretizer:
