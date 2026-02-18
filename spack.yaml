@@ -56,7 +56,7 @@ spack:
 
     # Preferences for all packages
     all:
-      require:
+      prefer:
       - 'target=x86_64_v4'
   view: true
   concretizer:
