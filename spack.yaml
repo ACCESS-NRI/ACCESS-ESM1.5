@@ -23,6 +23,9 @@ spack:
     um7:
       require:
       - '@git.2024.10.17=access-esm1.5'
+      - 'fflags="-debug all -g3 -grecord-gcc-switches"'
+      - 'cflags="-debug all -g3 -grecord-gcc-switches"'
+      - 'cxxflags="-debug all -g3 -grecord-gcc-switches"'
     # Lower-level ACCESS-NRI dependencies
     gcom4:
       require:
