@@ -33,7 +33,6 @@ spack:
     oasis3-mct:
       require:
       - '@git.access-esm1.5_2024.05.24=access-esm1.5'
-      - 'target=x86_64_v2'
     # Other dependencies
     openmpi:
       require:
