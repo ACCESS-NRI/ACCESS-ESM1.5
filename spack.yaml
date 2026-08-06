@@ -16,6 +16,9 @@ spack:
     # requiring a `@git.DATE=BRANCH` version.
     mom5:
       require:
+      # Refer to https://github.com/ACCESS-NRI/access-spack-packages/pull/443
+      # The version access-esm1.5 is only available in access-spack-packages
+      # versions older than 2026.08.000.
       - '@git.access-esm1.5-2025.03.002=access-esm1.5'
     cice4:
       require:
